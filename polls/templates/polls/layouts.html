@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Django Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare2.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+</head>
+<body>
+    <header class="container center-align">
+        <h1>Django New Tutorails</h1>
+
+    </header>
+
+    <div class="container">
+        {% block content %}
+        {% endblock%}
+    </div>
+
+</body>
+</html>
